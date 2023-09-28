@@ -19,7 +19,17 @@ typedef struct Heap{
 
 void* heap_top(Heap* pq){
 
- 
+  if(pq -> size == 0) return NULL;
+  
+  return (void*) pq -> heapArray[0].data;
+}
+
+void heap_push(Heap* pq, void* data, int priority){
+}
+
+
+void heap_pop(Heap* pq){
+
 }
 
 
