@@ -15,8 +15,8 @@ typedef struct Heap{
   int size;
   int capac;
 } Heap;
- 
-//    > Recuerde que este dato se encuentra en la raíz el montículo, es decir, en la primera casilla del arreglo.
+
+
 void* heap_top(Heap* pq){
 
   if(pq -> size == 0) return NULL;
@@ -55,7 +55,14 @@ void heap_pop(Heap* pq){
 
   if(pq -> size == 0) return;
 
-  pq -> 
+  pq -> heapArray[0] = pq -> heapArray[pq -> size - 1];
+  pq -> size--;
+
+  int i = 0;
+
+  while(1){
+    
+  }
   
 }
 
