@@ -232,3 +232,14 @@ heap.c:68:14: error: unused variable ‘temp’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ee84bff
+Thu 28 Sep 2023 01:50:04 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:68:14: error: unused variable ‘temp’ [-Werror=unused-variable]
+   68 |     heapElem temp = pq -> heapArray[i];
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+69d5871

@@ -75,7 +75,7 @@ void heap_pop(Heap* pq){
       current = right;
     }
 
-    
+    if(current == 1) break;
     
   }
   
