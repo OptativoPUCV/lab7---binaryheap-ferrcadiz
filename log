@@ -133,3 +133,28 @@ heap.c:25:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 2930ab3
+Thu 28 Sep 2023 01:34:05 AM UTC: 
+ heap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:24:25: error: incompatible types when returning type ‘heapElem’ {aka ‘struct nodo’} but ‘void *’ was expected
+   24 |   return pq -> heapArray[0];
+      |          ~~~~~~~~~~~~~~~^~~
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:45:9: error: expected expression before ‘)’ token
+   45 |   while(){
+      |         ^
+heap.c:49:31: error: ‘temp’ undeclared (first use in this function)
+   49 |     pq -> heapArray[parent] = temp;
+      |                               ^~~~
+heap.c:49:31: note: each undeclared identifier is reported only once for each function it appears in
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:25:1: error: control reaches end of non-void function [-Werror=return-type]
+   25 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+32f44fb
