@@ -286,3 +286,14 @@ heap.c:40:7: error: unused variable ‘parent’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 dc0502d
+Thu 28 Sep 2023 02:19:04 AM UTC: 
+ heap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:43:36: error: self-comparison always evaluates to false [-Werror=tautological-compare]
+   43 |     if(pq -> heapArray[i].priority > pq -> heapArray[i].priority){
+      |                                    ^
+cc1: all warnings being treated as errors
+Compilation failed
+50bc6e7
