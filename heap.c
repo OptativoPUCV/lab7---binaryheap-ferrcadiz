@@ -80,6 +80,10 @@ void heap_pop(Heap* pq){
     if(right < pq -> size && pq -> heapArray[right].priority > pq -> heapArray[current].priority){
       current = right;
     }
+
+    if(current == 1) break;
+
+    
     
   } 
 
