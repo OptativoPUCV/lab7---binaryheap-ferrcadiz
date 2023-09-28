@@ -45,7 +45,9 @@ void heap_push(Heap* pq, void* data, int priority){
 
       pq -> heapArray[i] = pq -> heapArray[parent];
       pq -> heapArray[parent] = temp;
+      
       i = parent;
+      parent = (i-1)/2;
     }
     else{
       break;
