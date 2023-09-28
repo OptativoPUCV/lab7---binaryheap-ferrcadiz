@@ -34,7 +34,7 @@ void heap_push(Heap* pq, void* data, int priority){
   pq -> heapArray[pq -> size].data = data;
   pq -> heapArray[pq -> size].priority = priority;
 
-  pq -> size++;
+  
 
   int i = pq -> size - 1;
   
@@ -51,7 +51,7 @@ void heap_push(Heap* pq, void* data, int priority){
       break;
     }
   }
-  
+  pq -> size++;
 }
 
 
