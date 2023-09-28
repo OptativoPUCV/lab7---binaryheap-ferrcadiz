@@ -32,7 +32,13 @@ void heap_pop(Heap* pq){
 
 }
 
+Implemente la función `Heap* createHeap()`. Esta función crea un nuevo dato de tipo Heap inicializando sus variables. Considere que la capacidad incial es de 3 casillas para el arreglo.
+   > Recuerde reservar memoria para el Heap y también para el arreglo `heapArray`.
+
 Heap* createHeap(){
+
+  Heap* heap = (Heap *) malloc(sizeof(Heap));
+  heap -> capac = 3;
 
    return NULL;
 }
