@@ -15,8 +15,7 @@ typedef struct Heap{
   int size;
   int capac;
 } Heap;
-
-//Implemente la función `void* heap_top(Heap* pq)`. Esta función retorna el dato con mayor prioridad del montículo. 
+ 
 //    > Recuerde que este dato se encuentra en la raíz el montículo, es decir, en la primera casilla del arreglo.
 void* heap_top(Heap* pq){
 
@@ -25,10 +24,15 @@ void* heap_top(Heap* pq){
   return pq -> heapArray[0];
 }
 
-
+//Implemente la función `void heap_push(Heap* pq, void* data, int p)`. Esta función inserta un nuevo dato con prioridad `p` en el montículo. Si no recuerda como insertar datos en el montículo puede ver las 
+//> Si el arreglo está lleno aumente la capacidad al **doble + 1** usando la función `realloc` así:> `arreglo = realloc(arreglo, nueva_capacidad)`
 
 void heap_push(Heap* pq, void* data, int priority){
 
+  if(pq -> size == pq -> capac){
+    pq -> capac = (pq -> capac * 2)
+  }
+  
 }
 
 
