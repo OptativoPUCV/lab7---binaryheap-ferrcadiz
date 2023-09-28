@@ -64,6 +64,15 @@ void heap_pop(Heap* pq){
   pq -> heapArray[0] = pq -> heapArray[pq -> size - 1];
   pq -> size--;
 
+  int i = 0;
+
+  while(1){
+    int left = (2 * i) + 1;
+    int right = (2 * i) + 2;
+    int current = i;
+
+  } 
+
 }
 
 
